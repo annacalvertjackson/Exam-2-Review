@@ -99,3 +99,60 @@ practice.melt
 ##id.vars are all the columns you want to keep the same
 ##measure.vars are all the columns you want to melt into the same column
 ##variable.name is what you want to call the new column (that your melted)
+
+
+##Custom Functions----
+
+##Find the area of a circle
+
+
+area.circle<-function(r) {
+  area<-pi*r^2
+  return(area)
+}
+
+
+big.circle<-area.circle(r=100)
+
+big.circle
+
+##Make a function with 2 arguments
+
+area.square<-function(l, w) {
+  area<-l*w
+  return(area)
+}
+
+
+big.square<-area.square(l=4, w=8)
+
+big.square
+
+##Add in an if_else statement
+
+area.square<-function(l, w) {
+  w<-if_else(condition=l>5, 10, w) ##if l > 5, then w takes on the value of 10; if l<5, then w stays as what we specified
+  area<-l*w
+  return(area)
+}
+
+
+area.square.ifelse<-area.square(l=6, w=5)
+
+area.square.ifelse
+
+##[1] 60
+
+area.square.ifelse<-area.square(l=2, w=5)
+
+area.square.ifelse
+
+##[1] 10
+
+##Exam 2 in a nutshell----
+
+##Be able to pull in knowledge from first exam (indexing, mean, etc.)
+##Know how to use GitHub
+##Transform data frames
+##if_else statements
+##custom functions
