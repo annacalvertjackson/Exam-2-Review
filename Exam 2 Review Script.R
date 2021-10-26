@@ -13,4 +13,6 @@
 ##Push changes to GitHub (green arrow)
 ##Commit to comment on version/changes
 
+setwd("C:/Users/annac/Desktop/Grad School/Classes/Fall2021_Classes/Intro to R")
 
+getwd()
